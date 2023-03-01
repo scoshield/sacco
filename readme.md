@@ -1,1 +1,1 @@
-# Ultimate Loan Manager
+# SACCO MANAGEMENT SYSTEM
