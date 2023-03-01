@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="mawNdv5MTSjJOulmJjWZfdd5ga2ojyQuIvmGggq1">
+    <title>     Clients
+ </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/themes/adminlte/css/adminlte.css" type="text/css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/themes/adminlte/css/custom.css" type="text/css"/>
+        <script src="http://127.0.0.1:8000/themes/adminlte/js/adminlte.js"></script>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-warning navbar-badge">0</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-item dropdown-header">0 Notifications</span>
+                                <div class="dropdown-divider"></div>
+                <a href="http://127.0.0.1:8000/user/profile/notification"
+                   class="dropdown-item dropdown-footer">View All</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown user-menu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <img class="user-image img-circle elevation-2"
+                         src="http://127.0.0.1:8000/themes/adminlte/img/user.png"
+                         alt="User profile picture">
+                                <span class="d-none d-md-inline">Admin Admin</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <!-- User image -->
+                <li class="user-header bg-primary">
+                                            <img class="user-image img-circle elevation-2"
+                             src="http://127.0.0.1:8000/themes/adminlte/img/user.png"
+                             alt="User profile picture">
+                                        <p>
+                        Admin Admin
+                        <small></small>
+                    </p>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                    <a href="http://127.0.0.1:8000/user/profile"
+                       class="btn btn-default btn-flat">
+                        Profile
+                    </a>
+                    <a href="#" onclick="logout()" class="btn btn-default btn-flat float-right">
+                        Logout</a>
+                    <form action="http://127.0.0.1:8000/logout" method="post" id="logout_form">
+                        <input type="hidden" name="_token" value="mawNdv5MTSjJOulmJjWZfdd5ga2ojyQuIvmGggq1">
+                    </form>
+                    <script>function logout() {
+                            $("#logout_form").submit();
+                        }</script>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="http://127.0.0.1:8000" class="brand-link">
+                    <span class="brand-text font-weight-light">SACCO System</span>
+            </a>
+    <div class="sidebar">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                                    <img class="img-circle elevation-2"
+                         src="http://127.0.0.1:8000/themes/adminlte/img/user.png"
+                         alt="User profile picture">
+                            </div>
+            <div class="info">
+                <a href="#" class="d-block">Admin Admin</a>
+            </div>
+        </div>
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="true">
+                                                                                                                        <li class="nav-item">
+                                    <a href="http://127.0.0.1:8000/dashboard" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-home"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                                                                                                <li class="nav-item has-treeview ">
+                                <a href="#" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-money-bill"></i>
+                                    <p>
+                                        Accounting
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/accounting/chart_of_account" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Charts of Accounts
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/accounting/journal_entry" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Journal Entries
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                    <li class="nav-item has-treeview ">
+                                <a href="#" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-building"></i>
+                                    <p>
+                                        Branches
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/branch" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Branches
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/branch/create" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Create Branch
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                                                    <li class="nav-item has-treeview ">
+                                    <a href="#" class="nav-link ">
+                                        <i class="nav-icon fas fab fa-paypal"></i>
+                                        <p>
+                                            Payroll
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                                                                                                                                                                        <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/payroll" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                View Payroll
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/payroll/create" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Create Payroll
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/payroll/item" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Payroll Items
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/payroll/template" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Payroll Templates
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                        </ul>
+                                </li>
+                                                                                                                                                                <li class="nav-item has-treeview  menu-open ">
+                                <a href="#" class="nav-link  active ">
+                                    <i class="nav-icon fas fas fa-users"></i>
+                                    <p>
+                                        Clients
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/client" class="nav-link  active ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Clients
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/client/create" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Create Client
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/client/group" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Groups
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                    <li class="nav-item has-treeview ">
+                                <a href="#" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-envelope"></i>
+                                    <p>
+                                        Communication
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/communication/campaign" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Campaigns
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/communication/campaign/create" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Create Campaign
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/communication/log" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Logs
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/communication/sms_gateway" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Manage SMS Gateways
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                    <li class="nav-item has-treeview ">
+                                <a href="#" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-money-bill"></i>
+                                    <p>
+                                        Loans
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/loan" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Loans
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/loan/application" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Applications
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/loan/create" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Create Loan
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/loan/product" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Manage Products
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/loan/charge" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Manage Charges
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/loan/calculator" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Loan Calculator
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                                                    <li class="nav-item has-treeview ">
+                                    <a href="#" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-share"></i>
+                                        <p>
+                                            Expenses
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                                                                                                                                                                        <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/expense" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                View Expenses
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/expense/create" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Create Expense
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/expense/type" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Expense Types
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                        </ul>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item">
+                                    <a href="http://127.0.0.1:8000/report" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-chart-bar"></i>
+                                        <p>
+                                            Reports
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                                                                                                <li class="nav-item">
+                                <a href="http://127.0.0.1:8000/custom_field" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-list"></i>
+                                    <p>
+                                        Custom Fields
+                                    </p>
+                                </a>
+                            </li>
+                                                                                                                                    <li class="nav-item has-treeview ">
+                                <a href="#" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-university"></i>
+                                    <p>
+                                        Savings
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/savings" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Savings
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/savings/create" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Create Savings
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/savings/product" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Manage Products
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/savings/charge" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Manage Charges
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                                                    <li class="nav-item has-treeview ">
+                                    <a href="#" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-money-bill"></i>
+                                        <p>
+                                            Income
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                                                                                                                                                                        <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/income" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                View Income
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/income/create" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Create Income
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/income/type" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Income Types
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                        </ul>
+                                </li>
+                                                                                                                                                                <li class="nav-item has-treeview ">
+                                <a href="#" class="nav-link ">
+                                    <i class="nav-icon fas fas fa-users"></i>
+                                    <p>
+                                        Users
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                                                                                                                                                        <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/user" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            View Users
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/user/create" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Create User
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                                                                                            <li class="nav-item">
+                                                    <a href="http://127.0.0.1:8000/user/role" class="nav-link ">
+                                                        <i class="nav-icon fas far fa-circle"></i>
+                                                        <p>
+                                                            Manage Roles
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </li>
+                                                                                                                                                                    <li class="nav-item">
+                                    <a href="http://127.0.0.1:8000/module" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-plug"></i>
+                                        <p>
+                                            Manage Modules
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item has-treeview ">
+                                    <a href="#" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-database"></i>
+                                        <p>
+                                            Shares
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                                                                                                                                                                        <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/share" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                View Shares
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/share/create" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Create Share
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/share/product" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Products
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/share/charge" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Charges
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                        </ul>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item has-treeview ">
+                                    <a href="#" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-building"></i>
+                                        <p>
+                                            Assets
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                                                                                                                                                                        <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/asset" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                View Assets
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/asset/create" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Create Asset
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/asset/type" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Manage Asset Types
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                        </ul>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item">
+                                    <a href="http://127.0.0.1:8000/menu" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-bars"></i>
+                                        <p>
+                                            Manage Menu
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item has-treeview ">
+                                    <a href="#" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-cogs"></i>
+                                        <p>
+                                            Settings
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                                                                                                                                                                        <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/organisation" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Organisation Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/general" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                General Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/email" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Email Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/sms" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                SMS Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/system" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                System Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/system_update" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                System Update
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                                                                                                                                    <li class="nav-item">
+                                                        <a href="http://127.0.0.1:8000/setting/other" class="nav-link ">
+                                                            <i class="nav-icon fas far fa-circle"></i>
+                                                            <p>
+                                                                Other Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                                                                                                                                        </ul>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item">
+                                    <a href="http://127.0.0.1:8000/theme" class="nav-link ">
+                                        <i class="nav-icon fas fas fa-palette"></i>
+                                        <p>
+                                            Themes
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                                                                                                                                <li class="nav-item">
+                                    <a href="http://127.0.0.1:8000/activity_log" class="nav-link ">
+                                        <i class="nav-icon fas fa fa-database"></i>
+                                        <p>
+                                            Activity Logs
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                                    </ul>
+        </nav>
+    </div>
+    <!-- /.sidebar -->
+</aside>
+        <div class="content-wrapper">
+        <section class="content pt-2">
+            <div class="row">
+                <div class="col-md-12">
+                                    </div>
+            </div>
+        </section>
+            <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Clients</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a
+                                    href="http://127.0.0.1:8000/dashboard">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active">Clients</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="card">
+            <div class="card-header">
+                                    <a href="http://127.0.0.1:8000/client/create" class="btn btn-info btn-sm">
+                        <i class="fas fa-plus"></i> Add Client
+                    </a>
+                                <div class="btn-group">
+                    <div class="dropdown">
+                        <a href="#" class="btn btn-trigger btn-icon dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="fas fa-wrench"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xs">
+                            <a class="dropdown-item"><span>Show</span></a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;per_page=10"
+                               class="dropdown-item ">
+                                10
+                            </a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;per_page=20"
+                               class="dropdown-item active">
+                                20
+                            </a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;per_page=50"
+                               class="dropdown-item ">50</a>
+                            <a class="dropdown-item">Order</a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by_dir=asc"
+                               class="dropdown-item active">
+                                ASC
+                            </a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by_dir=desc"
+                               class="dropdown-item ">
+                                DESC
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <form class="form-inline ml-0 ml-md-3" action="http://127.0.0.1:8000/client">
+                        <div class="input-group input-group-sm">
+                            <input type="text" name="s" class="form-control" value=""
+                                   placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-tools hidden-print">
+                    <div class="dropdown">
+                        <a href="#" class="btn btn-info btn-trigger btn-icon dropdown-toggle"
+                           data-toggle="dropdown">
+                            Actions
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xs dropdown-menu-right">
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv" class="dropdown-item">Download CSV format</a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=excel" class="dropdown-item">Download Excel format</a>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=excel_2007" class="dropdown-item">Download Excel 2007 format</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body table-responsive p-0">
+                <table class="table  table-striped table-hover table-condensed" id="data-table">
+                    <thead>
+                    <tr>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=group_name&amp;order_by_dir=asc">
+                                Group
+                            </a>
+                        </th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=name&amp;order_by_dir=asc">
+                                Name
+                            </a>
+                        </th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=id&amp;order_by_dir=asc">
+                                System ID
+                            </a>
+                        </th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=external_id&amp;order_by_dir=asc">
+                                External ID
+                            </a>
+                        </th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=gender&amp;order_by_dir=asc">
+                                Gender
+                            </a>
+                        </th>
+                        <th>Mobile</th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=status&amp;order_by_dir=asc">
+                                Status
+                            </a>
+                        </th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=branch&amp;order_by_dir=asc">
+                                Branch
+                            </a>
+                        </th>
+                        <th>
+                            <a href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;order_by=staff&amp;order_by_dir=asc">
+                                Staff
+                            </a>
+                        </th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/1/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/1/show">
+                                    <span>JOSEPHINE  NJERI NDICHU</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>1</span>
+                            </td>
+                            <td>
+                                <span>20284921</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>0710232555</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/1/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/1/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/1/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/2/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/2/show">
+                                    <span>MARY  WAIRIMU NJUGUNA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>2</span>
+                            </td>
+                            <td>
+                                <span>28463466</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>0113388304</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/2/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/2/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/2/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/3/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/3/show">
+                                    <span>CAROLINE  WANJIRU WAMAITHA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>3</span>
+                            </td>
+                            <td>
+                                <span>34462787</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>0725433712</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/3/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/3/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/3/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/4/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/4/show">
+                                    <span>TERESIA  WANJIRU KURIA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>4</span>
+                            </td>
+                            <td>
+                                <span>8518582</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>0714168814</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/4/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/4/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/4/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/5/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/5/show">
+                                    <span>LUCY  KIRAI</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>13030453</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>0715911212</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/5/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/5/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/5/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/6/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/6/show">
+                                    <span>MICHAEL  KURIA KIRUKU</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>6</span>
+                            </td>
+                            <td>
+                                <span>35820819</span>
+                            </td>
+                            <td>
+                                                                    <span>Male</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <span>0798229283</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/6/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/6/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/6/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/7/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/7/show">
+                                    <span>SAMUEL  ZAKAYO</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>7</span>
+                            </td>
+                            <td>
+                                <span>12566521</span>
+                            </td>
+                            <td>
+                                                                    <span>Male</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <span>0712736180</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/7/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/7/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/7/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/8/show">
+                                    <span>ROSE GROUP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/8/show">
+                                    <span>Scott  Herbert</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>8</span>
+                            </td>
+                            <td>
+                                <span>456655585</span>
+                            </td>
+                            <td>
+                                                                    <span>Male</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <span>0716160284</span>
+                            </td>
+                            <td>
+                                                                    <span>Pending</span>
+                                                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/8/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/8/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/8/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/9/show">
+                                    <span>THE THIRD STEP</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/9/show">
+                                    <span>JOHNSON SAKAJA  MUTHAMA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>9</span>
+                            </td>
+                            <td>
+                                <span>36521254</span>
+                            </td>
+                            <td>
+                                                                    <span>Male</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <span>254756236547</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user/1/show">
+                                    <span>Admin Admin</span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/9/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/9/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/9/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/437/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/437/show">
+                                    <span>MARY  MAINA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>437</span>
+                            </td>
+                            <td>
+                                <span>34291134</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254796665020</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/437/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/437/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/437/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/438/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/438/show">
+                                    <span>ZIPPORAH  GATHOGO</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>438</span>
+                            </td>
+                            <td>
+                                <span>21754889</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254707047874</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/438/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/438/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/438/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/439/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/439/show">
+                                    <span>JACINTA  MAINA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>439</span>
+                            </td>
+                            <td>
+                                <span>29246128</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254702452133</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/439/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/439/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/439/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/440/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/440/show">
+                                    <span>ESTHER  WAMUYU</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>440</span>
+                            </td>
+                            <td>
+                                <span>29384498</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254715567177</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/440/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/440/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/440/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/441/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/441/show">
+                                    <span>TERESA  </span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>441</span>
+                            </td>
+                            <td>
+                                <span>29814108</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254702844817</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/441/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/441/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/441/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/442/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/442/show">
+                                    <span>ELIZABETH  MAINA</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>442</span>
+                            </td>
+                            <td>
+                                <span>26655532</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254726739245</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/442/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/442/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/442/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/443/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/443/show">
+                                    <span>SAMWEL  KABIRU</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>443</span>
+                            </td>
+                            <td>
+                                <span></span>
+                            </td>
+                            <td>
+                                                                    <span>Male</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <span>254720520004</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/443/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/443/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/443/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/444/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/444/show">
+                                    <span>MARY  </span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>444</span>
+                            </td>
+                            <td>
+                                <span>6834373</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254719810741</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/444/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/444/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/444/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/445/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/445/show">
+                                    <span>NAOMI   WAMBUGU</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>445</span>
+                            </td>
+                            <td>
+                                <span>21246820</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254714213696</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/445/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/445/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/445/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/446/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/446/show">
+                                    <span>JOYCE  KAMAU</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>446</span>
+                            </td>
+                            <td>
+                                <span>28249656</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254723329759</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/446/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/446/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/446/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/group/447/show">
+                                    <span>SALAMANDER B1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/client/447/show">
+                                    <span>MARY  IRERI</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>447</span>
+                            </td>
+                            <td>
+                                <span>25467408</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Female</span>
+                                                                                                                            </td>
+                            <td>
+                                <span>254757293961</span>
+                            </td>
+                            <td>
+                                                                                                    <span>Active</span>
+                                                                                                                                                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/branch//show">
+                                    <span>Biashara Street</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/user//show">
+                                    <span></span>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button href="#" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="http://127.0.0.1:8000/client/447/show" class="dropdown-item">
+                                            <i class="far fa-eye"></i>
+                                            <span>Details</span>
+                                        </a>
+                                                                                    <a href="http://127.0.0.1:8000/client/447/edit" class="dropdown-item">
+                                                <i class="far fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                                                                <div class="divider"></div>
+                                                                                    <a href="http://127.0.0.1:8000/client/447/destroy"
+                                               class="dropdown-item confirm">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete</span>
+                                            </a>
+
+                                                                            </div>
+                                </div>
+                            </td>
+                        </tr>
+                                        </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div>Page 1 Of 4</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                    <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;page=2">2</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;page=3">3</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;page=4">4</a></li>
+                                                                        
+            
+                            <li class="page-item">
+                    <a class="page-link" href="http://127.0.0.1:8000/client?download=1&amp;type=csv&amp;page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.0
+    </div>
+    <strong>Copyright &copy; 2022 <a href="http://127.0.0.1:8000">SACCO System</a>.</strong> All rights
+    reserved.
+</footer></div>
+<script src="http://127.0.0.1:8000/themes/adminlte/js/custom.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#flash-overlay-modal').modal();
+        $('.confirm').on('click', function (e) {
+            e.preventDefault();
+            var href = $(this).attr('href');
+            Swal.fire({
+                title: 'Are you sure?',
+                text: '',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: "Ok",
+                cancelButtonText: "Cancel"
+            }).then(function (result) {
+                if (result.value) {
+                    window.location = href;
+                }
+
+            })
+        });
+
+    })
+</script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                records:{"current_page":1,"data":[{"branch":"Biashara Street","staff":"Admin Admin","id":1,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"JOSEPHINE","last_name":"NJERI NDICHU","gender":"female","mobile":"0710232555","email":"na@gmail.com","external_id":"20284921","status":"active","name":"JOSEPHINE  NJERI NDICHU","name_id":"JOSEPHINE  NJERI NDICHU (#1)"},{"branch":"Biashara Street","staff":"Admin Admin","id":2,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"MARY","last_name":"WAIRIMU NJUGUNA","gender":"female","mobile":"0113388304","email":"na1@gmail.com","external_id":"28463466","status":"active","name":"MARY  WAIRIMU NJUGUNA","name_id":"MARY  WAIRIMU NJUGUNA (#2)"},{"branch":"Biashara Street","staff":"Admin Admin","id":3,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"CAROLINE","last_name":"WANJIRU WAMAITHA","gender":"female","mobile":"0725433712","email":"caro@gmail.com","external_id":"34462787","status":"active","name":"CAROLINE  WANJIRU WAMAITHA","name_id":"CAROLINE  WANJIRU WAMAITHA (#3)"},{"branch":"Biashara Street","staff":"Admin Admin","id":4,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"TERESIA","last_name":"WANJIRU KURIA","gender":"female","mobile":"0714168814","email":"kuri@gmail.com","external_id":"8518582","status":"active","name":"TERESIA  WANJIRU KURIA","name_id":"TERESIA  WANJIRU KURIA (#4)"},{"branch":"Biashara Street","staff":"Admin Admin","id":5,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"LUCY","last_name":"KIRAI","gender":"female","mobile":"0715911212","email":"kirai@gmail.com","external_id":"13030453","status":"active","name":"LUCY  KIRAI","name_id":"LUCY  KIRAI (#5)"},{"branch":"Biashara Street","staff":"Admin Admin","id":6,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"MICHAEL","last_name":"KURIA KIRUKU","gender":"male","mobile":"0798229283","email":"mike@gmail.com","external_id":"35820819","status":"active","name":"MICHAEL  KURIA KIRUKU","name_id":"MICHAEL  KURIA KIRUKU (#6)"},{"branch":"Biashara Street","staff":"Admin Admin","id":7,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"SAMUEL","last_name":"ZAKAYO","gender":"male","mobile":"0712736180","email":"zakayo@gmail.com","external_id":"12566521","status":"active","name":"SAMUEL  ZAKAYO","name_id":"SAMUEL  ZAKAYO (#7)"},{"branch":"Biashara Street","staff":"Admin Admin","id":8,"group_name":"ROSE GROUP","loan_officer_id":1,"first_name":"Scott","last_name":"Herbert","gender":"male","mobile":"0716160284","email":"hscott@bluchip.co.ke","external_id":"456655585","status":"pending","name":"Scott  Herbert","name_id":"Scott  Herbert (#8)"},{"branch":"Biashara Street","staff":"Admin Admin","id":9,"group_name":"THE THIRD STEP","loan_officer_id":1,"first_name":"JOHNSON SAKAJA","last_name":"MUTHAMA","gender":"male","mobile":"254756236547","email":"sakaja@gmail.com","external_id":"36521254","status":"active","name":"JOHNSON SAKAJA  MUTHAMA","name_id":"JOHNSON SAKAJA  MUTHAMA (#9)"},{"branch":"Biashara Street","staff":null,"id":437,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"MARY","last_name":"MAINA","gender":"female","mobile":"254796665020","email":null,"external_id":"34291134","status":"active","name":"MARY  MAINA","name_id":"MARY  MAINA (#437)"},{"branch":"Biashara Street","staff":null,"id":438,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"ZIPPORAH","last_name":"GATHOGO","gender":"female","mobile":"254707047874","email":null,"external_id":"21754889","status":"active","name":"ZIPPORAH  GATHOGO","name_id":"ZIPPORAH  GATHOGO (#438)"},{"branch":"Biashara Street","staff":null,"id":439,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"JACINTA","last_name":"MAINA","gender":"female","mobile":"254702452133","email":null,"external_id":"29246128","status":"active","name":"JACINTA  MAINA","name_id":"JACINTA  MAINA (#439)"},{"branch":"Biashara Street","staff":null,"id":440,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"ESTHER","last_name":"WAMUYU","gender":"female","mobile":"254715567177","email":null,"external_id":"29384498","status":"active","name":"ESTHER  WAMUYU","name_id":"ESTHER  WAMUYU (#440)"},{"branch":"Biashara Street","staff":null,"id":441,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"TERESA","last_name":null,"gender":"female","mobile":"254702844817","email":null,"external_id":"29814108","status":"active","name":"TERESA  ","name_id":"TERESA   (#441)"},{"branch":"Biashara Street","staff":null,"id":442,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"ELIZABETH","last_name":"MAINA","gender":"female","mobile":"254726739245","email":null,"external_id":"26655532","status":"active","name":"ELIZABETH  MAINA","name_id":"ELIZABETH  MAINA (#442)"},{"branch":"Biashara Street","staff":null,"id":443,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"SAMWEL","last_name":"KABIRU","gender":"male","mobile":"254720520004","email":null,"external_id":null,"status":"active","name":"SAMWEL  KABIRU","name_id":"SAMWEL  KABIRU (#443)"},{"branch":"Biashara Street","staff":null,"id":444,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"MARY","last_name":null,"gender":"female","mobile":"254719810741","email":null,"external_id":"6834373","status":"active","name":"MARY  ","name_id":"MARY   (#444)"},{"branch":"Biashara Street","staff":null,"id":445,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"NAOMI ","last_name":"WAMBUGU","gender":"female","mobile":"254714213696","email":null,"external_id":"21246820","status":"active","name":"NAOMI   WAMBUGU","name_id":"NAOMI   WAMBUGU (#445)"},{"branch":"Biashara Street","staff":null,"id":446,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"JOYCE","last_name":"KAMAU","gender":"female","mobile":"254723329759","email":null,"external_id":"28249656","status":"active","name":"JOYCE  KAMAU","name_id":"JOYCE  KAMAU (#446)"},{"branch":"Biashara Street","staff":null,"id":447,"group_name":"SALAMANDER B1","loan_officer_id":null,"first_name":"MARY","last_name":"IRERI","gender":"female","mobile":"254757293961","email":null,"external_id":"25467408","status":"active","name":"MARY  IRERI","name_id":"MARY  IRERI (#447)"}],"first_page_url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=1","from":1,"last_page":4,"last_page_url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=4","links":[{"url":null,"label":"Previous","active":false},{"url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=1","label":1,"active":true},{"url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=2","label":2,"active":false},{"url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=3","label":3,"active":false},{"url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=4","label":4,"active":false},{"url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=2","label":"Next","active":false}],"next_page_url":"http:\/\/127.0.0.1:8000\/client?download=1&type=csv&page=2","path":"http:\/\/127.0.0.1:8000\/client","per_page":20,"prev_page_url":null,"to":20,"total":64},
+                selectAll: false,
+                selectedRecords: []
+            },
+            methods: {
+                selectAllRecords() {
+                    this.selectedRecords = [];
+                    if (this.selectAll) {
+                        this.records.data.forEach(item => {
+                            this.selectedRecords.push(item.id);
+                        });
+                    }
+                },
+            },
+        })
+    </script>
+</body>
+</html>
